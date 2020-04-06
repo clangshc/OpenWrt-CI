@@ -98,9 +98,9 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_64=y
-          CONFIG_TARGET_x86_64_Generic=y
+          CONFIG_TARGET_ath79=y
+          CONFIG_TARGET_ath79_tiny=y
+          CONFIG_TARGET_ath79_tiny_DEVICE_tplink_tl-wr941nd-v6=y
           EOF
 
           # 固件压缩:
